@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">estevez_ivan_ex3tDist</string>
+    <string name="tictactoe">Tres en raya</string>
+    <string name="first_item">First item</string>
+    <string name="second_item">Second item</string>
+    <string name="third_item">Third item</string>
+    <string name="winner">Ganador</string>
+    <string name="calculator">Calculadora</string>
+    <string name="ej01_button">Ejercicio 1</string>
+    <string name="ej02_button">Ejercicio 2</string>
+    <string name="ej03_button">Ejercicio 3</string>
+    <string name="title">Contadores</string>
+    <string name="addItem">Añadir</string>
+    <string name="incremento">Sumar</string>
+    <string name="decremento">Restar</string>
+    <string name="close">Cerrar</string>
+    <string name="global">Global: </string>
+    <string name="removeAll">Eliminar todos</string>
+    <string name="show">Mostrar</string>
+    <string name="numeroContadores">Número de contadores</string>
+</resources>
