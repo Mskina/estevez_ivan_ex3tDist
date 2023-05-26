@@ -5,7 +5,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.estevez_ivan_ex3tDist.screens.*
-import com.example.estevez_ivan_ex3tDist.screens.ej01.Ej01Screen
+import com.example.estevez_ivan_ex3tDist.screens.ej01.ui.elements.Ej01Screen
 import com.example.estevez_ivan_ex3tDist.screens.ej02.Ej02Screen
 
 @Composable

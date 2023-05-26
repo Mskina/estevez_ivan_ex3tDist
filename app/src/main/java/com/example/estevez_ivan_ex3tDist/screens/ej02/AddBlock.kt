@@ -19,7 +19,7 @@ import com.example.estevez_ivan_ex3tDist.R
 @Composable
 fun AddBlock(
     modifier: Modifier = Modifier,
-    textButton: String = stringResource(R.string.addItem),
+    textButton: String = stringResource(R.string.a_adir),
     addProduct: (String) -> Unit,
 ) {
     val focusManager = LocalFocusManager.current

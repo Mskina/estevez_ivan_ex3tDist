@@ -4,13 +4,13 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import com.example.estevez_ivan_ex3tDist.screens.ej01.data.model.User
 
 @Composable
-fun ShoppingList(
-    list: List<ShoppingProduct>,
-    onCloseItem: (ShoppingProduct) -> Unit,
-    onIncrementar: (ShoppingProduct) -> Unit,
-    onDecrementar: (ShoppingProduct) -> Unit,
+fun UserList(
+    list: List<User>,
+    onCheckedItem: (User, Boolean) -> Unit,
+    onCloseItem: (User) -> Unit,
     modifier: Modifier = Modifier,
 ) {
     LazyColumn(
@@ -20,12 +20,13 @@ fun ShoppingList(
             items = list,
             key = { it.id })
         { element ->
-            ShoppingListItem(
-                elementName = element.name,
-                elementContador = element.cuentaItem,
+            UserListItem(
+                userName = element.name,
+                userMail = element.email,
+                userPwd = element.pwd,
                 onClose = { onCloseItem(element) },
-                onIncrementar = { onIncrementar(element) },
-                onDecrementar = { onDecrementar(element) },
+                checked = element.checked,
+                onCheckedChange = { checked -> onCheckedItem(element, checked) },
             )
         }
     }
